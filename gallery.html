@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<html>
+<style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+<head>
+    <link rel="stylesheet" href="style.css">
+<title>MY GALLERY</title>
+</head>
+<body bgcolor="#F08080">
+<body>
+<br>
+<right>
+<div class="topnav">
+  <a href="socialmedia.html" Go To Social Media Page target="_blank">Social Media</a>
+  <a href="gallery.html" Go To Gallery Page target="_blank">Gallery</a>
+  <a href="education.html" Go To Education Page target="_blank">Education</a>
+  <a href="friends.html" Go To Friends Page target="blank">Friends</a>
+  <a href="family.html" Go To Family Page target="_blank">Family</a>
+  <a href="aboutme.html" Go To About Me Page target="_blank">About Me</a>
+  <a href="index.html" Go To Index Page target="_blank">HANIE'S WEBSITE</a>
+</div>
+</right>
+<left>
+<audio controls autoplay>
+<source src="audio/bgsound4.mp3" type="audio/mp3"></audio>
+</left>
+<br>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 8</div>
+  <img src="image/family1.jpg" style="width:100%">
+  <div class="text">Family is not an important thing, It's everything</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 8</div>
+  <img src="image/friend2.jpg" style="width:100%">
+  <div class="text">"Every tall girl needs a short bestfriend"</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 8</div>
+  <img src="image/friend4.jpg" style="width:100%">
+  <div class="text">"No friendship is an accident"</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 8</div>
+  <img src="image/me5.jpg" style="width:100%">
+  <div class="text">Lovely Cousin</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 8</div>
+  <img src="image/family2.jpg" style="width:100%">
+  <div class="text">Hari Raya Aidiladha</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 8</div>
+  <img src="image/mmbg1.jpg" style="width:100%">
+  <div class="text">Celebrate Teacher's Day</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">7 / 8</div>
+  <img src="image/mmbg9.jpg" style="width:100%">
+  <div class="text">Hari Raya Aidilfitri</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">8 / 8</div>
+  <img src="image/uitm5.jpg" style="width:100%">
+  <div class="text">My Classmate</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<center>
+<h2><font face="aptos" font color="white">THIS IS MY GALLERY PAGE</h2>
+</center>
+<br>
+
+</body>
+</html>
